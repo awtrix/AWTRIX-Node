@@ -4,6 +4,6 @@ AWTRIX Nodes are smart devices (based on ESP8266) that send their data directly 
 
 This is especially intended for users who do not have their own smarthome server like IOBroker, FHEM etc.
 
-Download the template firmware for an AWTRIX Node, Edit the node-conf.h and modify it in doJob to send a custom text and a IconID. 
+Download the template firmware for an AWTRIX Node, edit the node-conf.h and modify it in doJob to send a custom text and IconID. 
 
 AWTRIX displays each node at the end of the apploop. After that, AWTRIX deletes the data. So if the node is offline or doesnt sends any data, the node is not longer displayed.
