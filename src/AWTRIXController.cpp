@@ -5,12 +5,9 @@
 #include <ArduinoJson.h>
 #include "awtrix-conf.h"
 
-//////////////////////////////////////////////////////////////
-//////////////////////// Don't touch /////////////////////////
 
 WiFiClient espClient;
 PubSubClient client(espClient);
-
 bool updating = false;
 unsigned long previousMillis = 0;
 
@@ -27,7 +24,7 @@ void sendToAwtrix(char * text, int icon) {
 }
 
 void doJob() {
-  sendToAwtrix("test", iconID);
+  sendToAwtrix("AWTRIX", iconID);
 }
 
 void reconnect() {
@@ -52,7 +49,6 @@ void setup() {
 
 void loop() {
   ArduinoOTA.handle();
-
   if (!updating) {
     if (!client.connected()) {
       reconnect();
