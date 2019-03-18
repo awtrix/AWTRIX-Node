@@ -3,8 +3,7 @@
 #include <WiFiClient.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
-#include "awtrix-conf.h"
-
+#include "node-conf.h"
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -23,9 +22,13 @@ void sendToAwtrix(char * text, int icon) {
   client.publish("awtrixnode", JS.c_str());
 }
 
+//modify the code here
+//You can send a text an a IconID from AWTRIXER
 void doJob() {
   sendToAwtrix("AWTRIX", iconID);
 }
+
+
 
 void reconnect() {
   while (!client.connected()) {
