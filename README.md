@@ -1,6 +1,6 @@
 **Introducing AWTRIX-Nodes**
 
-AWTRIX Nodes are smart devices (based on ESP8266) that send their data directly to AWTRIX and display it in the form of an app. For example, an AWTRIX node can measure temperature  with a DHT22 and send it to AWTRIX.
+AWTRIX Nodes are smart devices (based on ESP8266) that send their data directly to AWTRIX 2.0 and display it in the form of an app. For example, an AWTRIX node can measure temperature  with a DHT22 and send it to AWTRIX.
 
 This is especially intended for users who do not have their own smarthome server like IOBroker, FHEM etc.
 
